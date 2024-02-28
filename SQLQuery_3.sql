@@ -1,0 +1,24 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Orders](
+	[OrderID] [int] NOT NULL,
+	[ClientID] [int] NULL,
+	[DriverID] [int] NULL,
+	[DetalhesPedido] [text] NULL,
+	[DataEntrega] [date] NULL,
+	[Status] [varchar](50) NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Orders] ADD PRIMARY KEY CLUSTERED 
+(
+	[OrderID] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Orders]  WITH CHECK ADD FOREIGN KEY([ClientID])
+REFERENCES [dbo].[Clients] ([ClientID])
+GO
+ALTER TABLE [dbo].[Orders]  WITH CHECK ADD FOREIGN KEY([DriverID])
+REFERENCES [dbo].[Drivers] ([DriverID])
+GO
