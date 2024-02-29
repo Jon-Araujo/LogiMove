@@ -10,6 +10,15 @@
 
 ## 🎥 Resultado em vídeo
 
+
+https://github.com/Jon-Araujo/LogiMove/assets/106936652/aa13b895-b17c-443d-a2a4-b7d8fb88994f
+
+
+https://github.com/Jon-Araujo/LogiMove/assets/106936652/5d2a8186-de5c-4219-9af2-204a1a660189
+
+
+
+
 ## Contextualização 📜
 
 A LogiMove Transportes, uma empresa renomada no setor de logística de transporte,
